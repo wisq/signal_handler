@@ -3,7 +3,7 @@ ifeq ($(shell uname),Darwin)
 OPTIONS+= -dynamiclib -undefined dynamic_lookup
 endif
 
-CFLAGS=-O2 -fPIC -std=c99 -Wall -D_POSIX_C_SOURCE
+CFLAGS=-O2 -fPIC -std=c99 -Wall
 
 
 priv/signal_handler.so: src/signal_handler_nif.c
